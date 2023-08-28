@@ -10,7 +10,6 @@ $ mvn -Pnative spring-boot:build-image '-Dspring-boot.build-image.imageName=jk/p
 $ docker run --rm -p 8080:8080 jk/playground/spring-native-hello-world:latest
 ```
 
-
 ## JVM image
 
 ```shell
@@ -21,3 +20,8 @@ $ mvn spring-boot:build-image '-Dspring-boot.build-image.imageName=jk/playground
 $ docker run --rm -p 8080:8080 jk/playground/spring-native-hello-world-classic:latest
 ```
 
+## Build via Maven with profile native
+
+```shell
+$ mvn -Pnative package
+```
